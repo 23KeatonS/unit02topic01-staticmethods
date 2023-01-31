@@ -50,6 +50,7 @@ public class Solutions {
     }
 
 
+    /* 
     public static boolean majority(boolean a, boolean b, boolean c){
         
         int trueCount = 0;
@@ -64,6 +65,17 @@ public class Solutions {
         }
         return trueCount >= 2;
     }
+*/
+    public static boolean majority(boolean a, boolean b, boolean c){
+        boolean statement = ((a&&b) || (a&&c) || (c&&b));
+
+        
+        
+        return statement;
+
+    }
+
+
 
     public static double trigIdentity(double a){
         double result = Math.pow(Math.sin(a),2) + Math.pow(Math.cos(a),2);
@@ -78,7 +90,7 @@ public class Solutions {
         System.out.println(max3(2,-5,3));
         System.out.println(max3(2.0,5.3,5.3000001));
         System.out.println(odd(false, false, false));
-        System.out.println(majority(false, false, true));
+        System.out.println(majority(false, false, false));
         System.out.println(trigIdentity(5));
     }
 }
