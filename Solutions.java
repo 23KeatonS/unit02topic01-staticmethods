@@ -63,9 +63,12 @@ public class Solutions {
             }
         }
         return trueCount >= 2;
+    }
 
+    public static double trigIdentity(double a){
+        double result = Math.pow(Math.sin(a),2) + Math.pow(Math.cos(a),2);
+        return result;
         
-
     }
 
 
@@ -76,6 +79,7 @@ public class Solutions {
         System.out.println(max3(2.0,5.3,5.3000001));
         System.out.println(odd(false, false, false));
         System.out.println(majority(false, false, true));
+        System.out.println(trigIdentity(5));
     }
 }
 
