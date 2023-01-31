@@ -29,11 +29,33 @@ public class Solutions {
     }
 
 
+
+    public static boolean odd(boolean a, boolean b, boolean c){
+        int trueCount = 0;
+        if (a){
+            trueCount ++;
+        }
+        if (b){
+            trueCount ++;
+        }
+        if (c){
+            trueCount ++;
+        }
+        if (trueCount%2==1){
+            return true;
+        }else{
+            return false;
+        }
+
+    }
+
+
     
     
     public static void main(String[] args) {
         System.out.println(max3(2,-5,3));
         System.out.println(max3(2.0,5.3,5.3000001));
+        System.out.println(odd(false, false, false));
     }
 }
 
