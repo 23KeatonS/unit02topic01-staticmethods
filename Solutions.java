@@ -50,12 +50,32 @@ public class Solutions {
     }
 
 
+    public static boolean majority(boolean a, boolean b, boolean c){
+        
+        int trueCount = 0;
+        boolean [] argList = new boolean[3];
+        argList[0] = a;
+        argList[1] = b;
+        argList[2] = c;
+        for (int i = 0; i<argList.length;i++){
+            if (argList[i]==true){
+                trueCount++;
+            }
+        }
+        return trueCount >= 2;
+
+        
+
+    }
+
+
     
     
     public static void main(String[] args) {
         System.out.println(max3(2,-5,3));
         System.out.println(max3(2.0,5.3,5.3000001));
         System.out.println(odd(false, false, false));
+        System.out.println(majority(false, false, true));
     }
 }
 
