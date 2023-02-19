@@ -82,3 +82,5 @@ public class Solutions {
 
 
 //javac Solutions.java; java Solutions
+
+// nice work
